@@ -1,5 +1,5 @@
-/*
 package br.unicesumar.dao;
+
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
@@ -9,8 +9,8 @@ import org.hibernate.Query;
 import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
 import br.unicesumar.utils.HibernateUtils;
+
 
 public abstract class GenericHibernateDao<T, ID extends Serializable>
 		implements GenericDao<T, ID> {
@@ -116,4 +116,3 @@ public abstract class GenericHibernateDao<T, ID extends Serializable>
 
 	
 }
-*/

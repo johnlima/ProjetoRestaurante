@@ -1,4 +1,4 @@
-/*
+
 package br.unicesumar.dao;
 import java.io.Serializable;
 import java.util.List;
@@ -28,4 +28,3 @@ public interface GenericDao<T, ID extends Serializable> {
 	T findByID(Long id);
 
 }
-*/

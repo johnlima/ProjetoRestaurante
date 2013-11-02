@@ -142,13 +142,13 @@
 			<groupId>org.kohsuke.droovy</groupId>
 			<artifactId>groovy-all</artifactId>
 			<version>1.6.3-kohsuke-1</version>
-		</dependency>	
+		</dependency>
 		<dependency>
 			<groupId>com.lowagie</groupId>
 			<artifactId>itext</artifactId>
 			<version>4.2.1</version>
 		</dependency>
-		<dependency>	
+		<dependency>
 			<groupId>poi</groupId>
 			<artifactId>poi-scratchpad-2.5.1-final</artifactId>
 			<version>20040804</version>

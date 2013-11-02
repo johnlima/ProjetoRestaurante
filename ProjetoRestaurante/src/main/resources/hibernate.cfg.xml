@@ -22,6 +22,14 @@
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 	
+		<mapping class = "br.unicesumar.persistence.Caixa"/>
+		<mapping class="br.unicesumar.persistence.Grupo"/>
+		<mapping class="br.unicesumar.persistence.HistoricoMesa"/>
+		<mapping class="br.unicesumar.persistence.HistoricoProduto"/>
+		<mapping class="br.unicesumar.persistence.Mesa"/>
+		<mapping class="br.unicesumar.persistence.Produto"/>
+		<mapping class="br.unicesumar.persistence.Usuario"/>
+		<mapping class="br.unicesumar.types.TipoUsuario"/>
 
 	</session-factory>
 </hibernate-configuration>
