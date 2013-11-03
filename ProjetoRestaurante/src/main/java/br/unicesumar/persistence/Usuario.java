@@ -7,6 +7,8 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 import br.unicesumar.types.TipoUsuario;
 @Entity
@@ -24,6 +26,12 @@ public class Usuario {
 	
 	@Enumerated(EnumType.STRING)
 	private TipoUsuario tipoUsuario;
+	
+	/*CARDINALIDADE*/
+	
+	@OneToOne
+	@JoinColumn(name = "caixa_id", nullable = false)
+	private Caixa caixa;
 	
 	public String getLogin() {
 		return login;
@@ -48,5 +56,11 @@ public class Usuario {
 	}
 	public void setTipoUsuario(TipoUsuario tipoUsuario) {
 		this.tipoUsuario = tipoUsuario;
+	}
+	public Caixa getCaixa() {
+		return caixa;
+	}
+	public void setCaixa(Caixa caixa) {
+		this.caixa = caixa;
 	}
 }
