@@ -8,8 +8,7 @@ import javax.persistence.Id;
 
 @Entity
 public class ItemMesa {
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	
 	private int id;
 
 	@Id
