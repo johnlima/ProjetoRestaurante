@@ -1,11 +1,30 @@
 package br.unicesumar.persistence;
 
-public class Usuario {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-	private String login;
-	private String senha;
+import br.unicesumar.types.TipoUsuario;
+@Entity
+public class Usuario {
+	
+	@Id()
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
-	//private TipoUsuario tipoUsuario;
+	
+	@Column(length=12,nullable=false)
+	private String login;
+	
+	@Column(length=4,nullable=false)
+	private String senha;
+	
+	@Enumerated(EnumType.STRING)
+	private TipoUsuario tipoUsuario;
+	
 	public String getLogin() {
 		return login;
 	}
@@ -23,5 +42,11 @@ public class Usuario {
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	public TipoUsuario getTipoUsuario() {
+		return tipoUsuario;
+	}
+	public void setTipoUsuario(TipoUsuario tipoUsuario) {
+		this.tipoUsuario = tipoUsuario;
 	}
 }
