@@ -4,12 +4,23 @@ import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HistoricoMesa {
+import javax.persistence.Column;
+import javax.persistence.Id;
 
-	private List<Produto> produtos = new ArrayList();
+public class HistoricoMesa {
+	
+	@Id
+	@Column(nullable = false, length = 5)
+	private int numeroMesa;
+	
+	@Column(nullable = false)
 	private Date data;
-	private int mesa;
+	
+	@Column(nullable = false)
 	private Double valor;
+	
+	private List<Produto> produtos = new ArrayList();	
+	
 	
 	
 	public void gerarRelatorio(){}
@@ -36,12 +47,12 @@ public class HistoricoMesa {
 
 
 	public int getMesa() {
-		return mesa;
+		return numeroMesa;
 	}
 
 
 	public void setMesa(int mesa) {
-		this.mesa = mesa;
+		this.numeroMesa = mesa;
 	}
 
 
