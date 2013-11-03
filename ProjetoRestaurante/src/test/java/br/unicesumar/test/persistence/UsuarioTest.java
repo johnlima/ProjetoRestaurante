@@ -10,7 +10,7 @@ import br.unicesumar.types.TipoUsuario;
 
 public class UsuarioTest {
 	UsuarioDaoImpl userDao = new UsuarioDaoImpl();
-/* --INSERT FUNCIONA OK
+ //INSERT FUNCIONA OK
 	@Test
 	public void testInsert() {
 		Usuario user = new Usuario();
@@ -22,19 +22,18 @@ public class UsuarioTest {
 		assertEquals(user.getClass(), Usuario.class);
 	}
 	
- */
+
 	
 	
-/* --UPDATE PASSA NO TESTE MAS NAO ALTERA NADA NO BANCO
+ //UPDATE PASSA NO TESTE MAS NAO ALTERA NADA NO BANCO
 	@Test
 	public void testUpdate() {
 		userDao.updateUser();
 		String usuario = "john Lima";
 //		assertEquals(userDao.consulta(), usuario);
 	}
-*/
 		
-
+/*
 	// REMOVER PASSA NO TESTE MAS NAO REMOVE NO BANCO
 	@Test
 	public void testRemove(){
@@ -43,4 +42,5 @@ public class UsuarioTest {
 			
 		
 	}
+ */
 }

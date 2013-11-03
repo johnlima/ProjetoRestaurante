@@ -15,7 +15,7 @@ public class UsuarioDaoImpl extends GenericHibernateDao<Usuario, Long> {
 	public void updateUser(){  
 	    Query query = session.createQuery("UPDATE Usuario SET login = :login" + " WHERE id = :id");  
 	    query.setParameter("login","John Lima");  
-	    query.setParameter("id",4);  
+	    query.setParameter("id",9);  
 	    int result = query.executeUpdate(); 
 	    System.out.println("linha afetada: " + result);
 	}    
