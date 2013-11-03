@@ -1,29 +1,44 @@
 package br.unicesumar.persistence;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
+
 public class HistoricoProduto {
 
-	private int produto;
-	private int mesa;
-	private int pedido;
+	@Column
+	@Id
+	private int numeroMesa;
 	
+	@Column(nullable = false, length = 5)
+	@Id
+	private int idProduto;
 	
-	public int getProduto() {
-		return produto;
+	@Column
+	private double quantidade;
+
+	public int getIdProduto() {
+		return idProduto;
 	}
-	public void setProduto(int produto) {
-		this.produto = produto;
+
+	public void setIdProduto(int idProduto) {
+		this.idProduto = idProduto;
 	}
+	
 	public int getMesa() {
-		return mesa;
+		return numeroMesa;
 	}
+
 	public void setMesa(int mesa) {
-		this.mesa = mesa;
+		this.numeroMesa = mesa;
 	}
-	public int getPedido() {
-		return pedido;
+
+
+	public double getQuantidade() {
+		return quantidade;
 	}
-	public void setPedido(int pedido) {
-		this.pedido = pedido;
+
+	public void setQuantidade(double quantidade) {
+		this.quantidade = quantidade;
 	}
-	
+
 }

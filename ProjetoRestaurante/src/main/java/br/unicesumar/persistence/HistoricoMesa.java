@@ -6,9 +6,9 @@ import java.util.List;
 
 public class HistoricoMesa {
 
-	private List<Produto> produtos = new ArrayList();
+	private int nuemroMesa;
 	private Date data;
-	private int mesa;
+	private List<Produto> produtos = new ArrayList();	
 	private Double valor;
 	
 	
@@ -36,12 +36,12 @@ public class HistoricoMesa {
 
 
 	public int getMesa() {
-		return mesa;
+		return nuemroMesa;
 	}
 
 
 	public void setMesa(int mesa) {
-		this.mesa = mesa;
+		this.nuemroMesa = mesa;
 	}
 
 
