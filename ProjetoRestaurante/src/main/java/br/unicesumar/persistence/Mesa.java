@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 public class Mesa {
 	
@@ -22,6 +23,9 @@ public class Mesa {
 	public void adicionarItem(){}
 	public void fecharPedido(){}
 	public void abrirPedido(){}
+	
+	@ManyToOne
+	private Caixa caixa_mesa;
 
 	
 	public Date getData() {
