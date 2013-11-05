@@ -28,7 +28,7 @@ public class UsuarioTest {
 	public void testUpdate() {
 		userDao.updateUser();
 		String usuario = "john Lima";
-		//assertEquals(userDao.consulta(), usuario);
+		assertEquals(userDao.consulta(), usuario);
 	}
 		
 
