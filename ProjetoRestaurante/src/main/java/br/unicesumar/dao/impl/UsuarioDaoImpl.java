@@ -16,11 +16,11 @@ public class UsuarioDaoImpl extends GenericHibernateDao<Usuario, Long> {
 	Session session = HibernateUtils.getSession();
 	
 	private String nome;
-	public void updateUser(int id){
+	public void updateUser(){
 		Transaction t = session.beginTransaction();
 		Query query = session.createQuery("UPDATE Usuario u SET u.login = :login" + " WHERE u.id = :user_id");  
-	    query.setParameter("login","John Lima");  
-	    query.setParameter("user_id",id);
+	    query.setParameter("login","trintin");  
+	    query.setParameter("user_id",1);
 	    query.executeUpdate();
 	    t.commit();
 	    session.close();
@@ -47,10 +47,8 @@ public class UsuarioDaoImpl extends GenericHibernateDao<Usuario, Long> {
 	
 	public Usuario alterar(Usuario user){
 
-		user.setId(user.getId());
-		user = (Usuario) session.merge(user);
 		user.setLogin("john Lima");
-		session.save(user);
+		user = (Usuario) session.merge(user);
 		return user;
 		
 	}
