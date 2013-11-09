@@ -1,17 +1,24 @@
 package br.unicesumar.persistence;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+@Entity
 public class Produto {
-
-	private Long id;
+	@Id
+	@Column
+	private int id;
+	@Column
 	private String nome;
+	@Column
 	private Double preco;
 	
 	public void listarProduto(){};
 	public void cadastrarProduto(){}
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getNome() {

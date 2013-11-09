@@ -23,10 +23,10 @@ public class Mesa {
 	public void adicionarItem(){}
 	public void fecharPedido(){}
 	public void abrirPedido(){}
-	
+	/*
 	@ManyToOne
 	private Caixa caixa_mesa;
-
+*/
 	
 	public Date getData() {
 		return data;

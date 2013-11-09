@@ -9,14 +9,11 @@ import javax.persistence.Id;
 @Entity
 public class ItemMesa {
 	
-	private int id;
-
 	@Id
 	@Column(nullable = false, length = 5)
 	private int mesa;
 
-	@Id
-	@Column(nullable = false, length = 5)
+	//@Column(nullable = false, length = 5)
 	private int idProduto;
 
 	@Column(nullable = false)

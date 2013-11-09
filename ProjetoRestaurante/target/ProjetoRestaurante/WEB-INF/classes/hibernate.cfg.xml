@@ -22,7 +22,7 @@
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 	
-		<mapping class = "br.unicesumar.persistence.Caixa"/>
+		<mapping class="br.unicesumar.persistence.Caixa"/>
 		<mapping class="br.unicesumar.persistence.Grupo"/>
 		<mapping class="br.unicesumar.persistence.HistoricoMesa"/>
 		<mapping class="br.unicesumar.persistence.HistoricoProduto"/>

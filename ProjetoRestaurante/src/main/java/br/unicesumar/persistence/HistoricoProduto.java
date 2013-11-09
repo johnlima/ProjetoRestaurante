@@ -6,11 +6,9 @@ import javax.persistence.Id;
 public class HistoricoProduto {
 
 	@Column
-	@Id
 	private int numeroMesa;
 	
 	@Column(nullable = false, length = 5)
-	@Id
 	private int idProduto;
 	
 	@Column
